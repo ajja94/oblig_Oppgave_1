@@ -200,7 +200,7 @@ namespace Obligatorisk_Oppgave_1
             while (true)
             {
                 DeadYear = 0;
-                Console.Write("Enter death true or false: ");
+                Console.Write("Enter death year og skip: ");
                 string input = Console.ReadLine();
                 if (input == "") break;
                 DeadYear = Convert.ToInt32(input);
