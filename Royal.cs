@@ -12,14 +12,14 @@ namespace Obligatorisk_Oppgave_1
         {
            Persons.Add(new Person(0,"Tidligere Konge","Olav", "VII",87, 1903, 1991));
            Persons.Add(new Person(1,"Tidligere Dronning", "Märtha", "Dronning av norge", 53, 1901, 1954));
-           Persons.Add(new Person(2,"Konge", "Harald", "den Femte", 82, 1937, 0));
-           Persons.Add(new Person(3,"Dronning", "Sonja", "av Norge", 82, 1937, 0));
-           Persons.Add(new Person(4,"Prinsesse", "Märtha-Louise", "av Norge", 48, 1971, 0));
-           Persons.Add(new Person(5,"Kron prins", "Haakon", "den Femte", 46, 1973, 0));
-           Persons.Add(new Person(6,"Kron prinsesse", "Mette-Marit", "av Norge", 46, 1973, 0));
-           Persons.Add(new Person(7,"prins", "Sverre Magnus", "av Norge", 14, 2005, 0));
-           Persons.Add(new Person(8,"prinsesse", "Ingerid Alexandra", "av Norge", 15, 2004, 0));
-           Persons.Add(new Person(9,"", "Marius", "Borg Høiby", 23, 1997, 0));
+           Persons.Add(new Person(2,"Konge", "Harald", "den Femte", 82, 1937));
+           Persons.Add(new Person(3,"Dronning", "Sonja", "av Norge", 82, 1937));
+           Persons.Add(new Person(4,"Prinsesse", "Märtha-Louise", "av Norge", 48, 1971)); 
+           Persons.Add(new Person(5,"Kron prins", "Haakon", "den Femte", 46, 1973));
+           Persons.Add(new Person(6,"Kron prinsesse", "Mette-Marit", "av Norge", 46, 1973 ));
+           Persons.Add(new Person(7,"prins", "Sverre Magnus", "av Norge", 14, 2005 ));
+           Persons.Add(new Person(8,"prinsesse", "Ingerid Alexandra", "av Norge", 15, 2004 ));
+           Persons.Add(new Person(9,"", "Marius", "Borg Høiby", 23, 1997 ));
 
             Persons[3].Mother = Persons[1];
             Persons[3].Father = Persons[0];

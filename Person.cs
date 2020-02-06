@@ -16,7 +16,7 @@ namespace Obligatorisk_Oppgave_1
         public Person Father { get;  set; }
         public int Id { get; private set; }
 
-        public Person(int Id, string Title, string Name, string LastName, int Age, int DateOfBirth, int DeadYear/*, Person Mother, Person Father*//*, int Id*/)
+        public Person(int Id, string Title, string Name, string LastName, int Age, int DateOfBirth, int DeadYear = 0/*, Person Mother, Person Father*//*, int Id*/)
         {
             this.Title = Title;
             this.Name = Name;
@@ -29,7 +29,7 @@ namespace Obligatorisk_Oppgave_1
             this.Id = Id;
         }
 
-        internal void PrintPerson()
+        public void PrintPerson()
         {
             if (Title != "") Console.WriteLine($"Title: {Title}");
             if (Name != "") Console.WriteLine($"Name: {Name}");
@@ -37,8 +37,8 @@ namespace Obligatorisk_Oppgave_1
             if (Age != 0) Console.WriteLine($"Age: {Age}");
             if (DateOfBirth != 0) Console.WriteLine($"Date Of Birth: {DateOfBirth}");
             if (DeadYear !=0) Console.WriteLine($"Dead: {DeadYear}");
-            if (Mother != null)Console.WriteLine($"Mother: {Mother.Name}");
-            if (Father != null)Console.WriteLine($"Father: {Father.Name}");
+            if (Mother != null)Console.WriteLine($"Mother's name: {Mother.Name} Id: {Mother.Id}");
+            if (Father != null)Console.WriteLine($"Father's name: {Father.Name} Id: {Father.Id}");
             Console.WriteLine($"Id: {Id}");
         }
 

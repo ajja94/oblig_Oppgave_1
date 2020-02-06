@@ -41,7 +41,7 @@ namespace Obligatorisk_Oppgave_1
                 {
                     Person.ShowPerson("");
                 }
-                else if (input.Contains("father "))
+                else if (input.Contains("father " )|| input.Contains("mother "))
                 {
                     try
                     {
@@ -70,7 +70,7 @@ namespace Obligatorisk_Oppgave_1
             var children = new List<Person>();
             foreach(var person in Royal.Persons)
             {
-                if (person.Father == Royal.Persons[Id])
+                if (person.Father == Royal.Persons[Id] || person.Mother == Royal.Persons[Id])
                 {
                     children.Add(person);
                 }
@@ -79,7 +79,7 @@ namespace Obligatorisk_Oppgave_1
             foreach (var child in children)
             {
                 //child.PrintPerson();
-                Console.WriteLine(child.Name);
+                Console.WriteLine($"{child.Name} id: {Convert.ToString(child.Id)}");  
             }
         }
 
@@ -90,6 +90,7 @@ namespace Obligatorisk_Oppgave_1
             Console.WriteLine("type count to get the Number of Royals you can search trough");
             Console.WriteLine("type List to show all royals");
             Console.WriteLine("type father and the id of the father to get his childrens name ");
+            Console.WriteLine("type mother and the id of the mother to get his childrens name ");
             Console.WriteLine("type enter to end ");
 
         }
@@ -122,9 +123,9 @@ namespace Obligatorisk_Oppgave_1
             int Age;
             int DateOfBirth;
             int DeadYear;
-            int Id;
-            Person Mother;
-            Person Father;
+            //int Id;
+            //Person Mother;
+            //Person Father;
 
            
 
